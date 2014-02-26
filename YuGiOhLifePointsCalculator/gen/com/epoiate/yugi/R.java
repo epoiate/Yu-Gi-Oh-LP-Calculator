@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.mycompany.myapp;
+package com.epoiate.yugi;
 
 public final class R {
     public static final class attr {

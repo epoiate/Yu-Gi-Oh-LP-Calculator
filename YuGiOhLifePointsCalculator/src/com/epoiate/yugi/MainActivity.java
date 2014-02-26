@@ -1,4 +1,4 @@
-package com.mycompany.myapp;
+package com.epoiate.yugi;
 
 import android.app.*;
 import android.os.*;
