@@ -35,7 +35,9 @@
 		<ProgressBar
 			android:layout_height="wrap_content"
 			style="?android:attr/progressBarStyleHorizontal"
-			android:layout_width="match_parent"/>
+			android:layout_width="match_parent"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"/>
 
 		<LinearLayout
 			android:layout_height="wrap_content"
@@ -68,25 +70,30 @@
 		<LinearLayout
 			android:layout_height="wrap_content"
 			android:layout_width="match_parent"
-			android:orientation="horizontal">
+			android:orientation="horizontal"
+			android:gravity="center">
 
 			<Button
 				android:layout_height="wrap_content"
 				android:text="50"
 				android:layout_width="wrap_content"
-				android:layout_weight="1.0"/>
+				android:paddingLeft="15dp"
+				android:paddingRight="15dp"/>
 
 			<Button
 				android:layout_height="wrap_content"
 				android:text="Reset"
 				android:layout_width="wrap_content"
-				android:layout_weight="1.0"/>
+				android:paddingLeft="15dp"
+				android:paddingRight="15dp"
+				android:rotation="1"/>
 
 			<Button
 				android:layout_height="wrap_content"
 				android:text="50"
 				android:layout_width="wrap_content"
-				android:layout_weight="1.0"/>
+				android:paddingLeft="15dp"
+				android:paddingRight="15dp"/>
 
 		</LinearLayout>
 
@@ -137,8 +144,8 @@
 				android:text="1000"
 				android:layout_width="wrap_content"
 				android:layout_weight="1.0"/>
-	
-			</LinearLayout>
+
+		</LinearLayout>
 
 	</LinearLayout>
 
