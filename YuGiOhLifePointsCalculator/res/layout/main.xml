@@ -22,13 +22,13 @@
 				android:text="Button"
 				android:layout_width="wrap_content"
 				android:rotation="180"/>
-				
+
 			<Button
 				android:layout_height="wrap_content"
 				android:text="Button"
 				android:layout_width="wrap_content"
 				android:rotation="180"/>
-				
+
 			<Button
 				android:layout_height="wrap_content"
 				android:text="Button"
@@ -47,13 +47,13 @@
 				android:text="Button"
 				android:layout_width="wrap_content"
 				android:rotation="180"/>
-				
+
 			<Button
 				android:layout_height="wrap_content"
 				android:text="Button"
 				android:layout_width="wrap_content"
 				android:rotation="180"/>
-				
+
 			<Button
 				android:layout_height="wrap_content"
 				android:text="Button"
@@ -72,13 +72,13 @@
 				android:text="Button"
 				android:layout_width="wrap_content"
 				android:rotation="180"/>
-				
+
 			<Button
 				android:layout_height="wrap_content"
 				android:text="Button"
 				android:layout_width="wrap_content"
 				android:rotation="180"/>
-				
+
 			<Button
 				android:layout_height="wrap_content"
 				android:text="Button"
@@ -123,7 +123,8 @@
 				android:text="Life Points"
 				android:textAppearance="?android:attr/textAppearanceMedium"
 				android:layout_width="wrap_content"
-				android:rotation="180"/>
+				android:rotation="180"
+				android:paddingLeft="10dp"/>
 
 			<TextView
 				android:layout_height="wrap_content"
@@ -154,9 +155,10 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:text="Medium Text"
+					android:text="Life Points"
 					android:textAppearance="?android:attr/textAppearanceMedium"
-					android:layout_width="wrap_content"/>
+					android:layout_width="wrap_content"
+					android:paddingLeft="10dp"/>
 
 			</LinearLayout>
 
@@ -193,12 +195,10 @@
 					android:text="Button"
 					android:layout_width="wrap_content"/>
 
-			</LinearLayout>
-
-			<LinearLayout
-				android:layout_height="wrap_content"
-				android:layout_width="wrap_content"
-				android:orientation="horizontal">
+				<Button
+					android:layout_height="wrap_content"
+					android:text="Button"
+					android:layout_width="wrap_content"/>
 
 				<Button
 					android:layout_height="wrap_content"
@@ -211,6 +211,38 @@
 				android:layout_height="wrap_content"
 				android:layout_width="wrap_content"
 				android:orientation="horizontal">
+
+				<Button
+					android:layout_height="wrap_content"
+					android:text="Button"
+					android:layout_width="wrap_content"/>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:text="Button"
+					android:layout_width="wrap_content"/>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:text="Button"
+					android:layout_width="wrap_content"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal">
+
+				<Button
+					android:layout_height="wrap_content"
+					android:text="Button"
+					android:layout_width="wrap_content"/>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:text="Button"
+					android:layout_width="wrap_content"/>
 
 				<Button
 					android:layout_height="wrap_content"
