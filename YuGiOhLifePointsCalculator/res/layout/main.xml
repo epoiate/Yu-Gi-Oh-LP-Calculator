@@ -19,30 +19,21 @@
 
 			<Button
 				android:layout_height="wrap_content"
-				android:text="+1000"
+				android:text="Button"
 				android:layout_width="wrap_content"
-				android:rotation="180"
-				android:layout_weight="1.0"
-				android:paddingLeft="10dp"
-				android:paddingRight="10dp"/>
+				android:rotation="180"/>
 
 			<Button
 				android:layout_height="wrap_content"
-				android:text="2x"
+				android:text="Button"
 				android:layout_width="wrap_content"
-				android:rotation="180"
-				android:layout_weight="1.0"
-				android:paddingLeft="10dp"
-				android:paddingRight="10dp"/>
+				android:rotation="180"/>
 
 			<Button
 				android:layout_height="wrap_content"
-				android:text="-1000"
+				android:text="Button"
 				android:layout_width="wrap_content"
-				android:rotation="180"
-				android:layout_weight="1.0"
-				android:paddingLeft="10dp"
-				android:paddingRight="10dp"/>
+				android:rotation="180"/>
 
 		</LinearLayout>
 
@@ -53,30 +44,21 @@
 
 			<Button
 				android:layout_height="wrap_content"
-				android:text="+500"
+				android:text="Button"
 				android:layout_width="wrap_content"
-				android:rotation="180"
-				android:layout_weight="1.0"
-				android:paddingLeft="10dp"
-				android:paddingRight="10dp"/>
+				android:rotation="180"/>
 
 			<Button
 				android:layout_height="wrap_content"
-				android:text="1/2"
+				android:text="Button"
 				android:layout_width="wrap_content"
-				android:rotation="180"
-				android:layout_weight="1.0"
-				android:paddingLeft="10dp"
-				android:paddingRight="10dp"/>
+				android:rotation="180"/>
 
 			<Button
 				android:layout_height="wrap_content"
-				android:text="-500"
+				android:text="Button"
 				android:layout_width="wrap_content"
-				android:rotation="180"
-				android:layout_weight="1.0"
-				android:paddingLeft="10dp"
-				android:paddingRight="10dp"/>
+				android:rotation="180"/>
 
 		</LinearLayout>
 
@@ -87,30 +69,21 @@
 
 			<Button
 				android:layout_height="wrap_content"
-				android:text="+100"
+				android:text="Button"
 				android:layout_width="wrap_content"
-				android:rotation="180"
-				android:layout_weight="1.0"
-				android:paddingLeft="10dp"
-				android:paddingRight="10dp"/>
+				android:rotation="180"/>
 
 			<Button
 				android:layout_height="wrap_content"
-				android:text="Reset"
+				android:text="Button"
 				android:layout_width="wrap_content"
-				android:rotation="180"
-				android:layout_weight="1.0"
-				android:paddingLeft="10dp"
-				android:paddingRight="10dp"/>
+				android:rotation="180"/>
 
 			<Button
 				android:layout_height="wrap_content"
-				android:text="-100"
+				android:text="Button"
 				android:layout_width="wrap_content"
-				android:rotation="180"
-				android:layout_weight="1.0"
-				android:paddingLeft="10dp"
-				android:paddingRight="10dp"/>
+				android:rotation="180"/>
 
 		</LinearLayout>
 
@@ -123,26 +96,20 @@
 				android:layout_height="wrap_content"
 				android:text="+"
 				android:layout_width="wrap_content"
-				android:rotation="180"
-				android:paddingLeft="10dp"
-				android:paddingRight="10dp"/>
+				android:rotation="180"/>
 
 			<EditText
 				android:layout_height="wrap_content"
 				android:inputType="numberDecimal"
 				android:ems="9"
 				android:layout_width="wrap_content"
-				android:rotation="180"
-				android:paddingLeft="10dp"
-				android:paddingRight="10dp"/>
+				android:rotation="180"/>
 
 			<Button
 				android:layout_height="wrap_content"
 				android:text="-"
 				android:layout_width="wrap_content"
-				android:rotation="180"
-				android:paddingLeft="10dp"
-				android:paddingRight="10dp"/>
+				android:rotation="180"/>
 
 		</LinearLayout>
 
@@ -183,7 +150,8 @@
 					android:layout_height="wrap_content"
 					android:text="Player 1:"
 					android:textAppearance="?android:attr/textAppearanceMedium"
-					android:layout_width="wrap_content"/>
+					android:layout_width="wrap_content"
+					android:rotation="1.0"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -202,24 +170,18 @@
 				<Button
 					android:layout_height="wrap_content"
 					android:text="-"
-					android:layout_width="wrap_content"
-					android:paddingLeft="10dp"
-					android:paddingRight="10dp"/>
+					android:layout_width="wrap_content"/>
 
 				<EditText
 					android:layout_height="wrap_content"
 					android:inputType="numberDecimal"
 					android:ems="9"
-					android:layout_width="wrap_content"
-					android:paddingLeft="10dp"
-					android:paddingRight="10dp"/>
+					android:layout_width="wrap_content"/>
 
 				<Button
 					android:layout_height="wrap_content"
 					android:text="+"
-					android:layout_width="wrap_content"
-					android:paddingLeft="10dp"
-					android:paddingRight="10dp"/>
+					android:layout_width="wrap_content"/>
 
 			</LinearLayout>
 
@@ -230,27 +192,18 @@
 
 				<Button
 					android:layout_height="wrap_content"
-					android:text="-100"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
-					android:paddingLeft="10dp"
-					android:paddingRight="10dp"/>
+					android:text="Button"
+					android:layout_width="wrap_content"/>
 
 				<Button
 					android:layout_height="wrap_content"
-					android:text="Reset"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
-					android:paddingLeft="10dp"
-					android:paddingRight="10dp"/>
+					android:text="Button"
+					android:layout_width="wrap_content"/>
 
 				<Button
 					android:layout_height="wrap_content"
-					android:text="+100"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
-					android:paddingLeft="10dp"
-					android:paddingRight="10dp"/>
+					android:text="Button"
+					android:layout_width="wrap_content"/>
 
 			</LinearLayout>
 
@@ -261,27 +214,18 @@
 
 				<Button
 					android:layout_height="wrap_content"
-					android:text="-500"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
-					android:paddingLeft="10dp"
-					android:paddingRight="10dp"/>
+					android:text="Button"
+					android:layout_width="wrap_content"/>
 
 				<Button
 					android:layout_height="wrap_content"
-					android:text="1/2"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
-					android:paddingLeft="10dp"
-					android:paddingRight="10dp"/>
+					android:text="Button"
+					android:layout_width="wrap_content"/>
 
 				<Button
 					android:layout_height="wrap_content"
-					android:text="+500"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
-					android:paddingLeft="10dp"
-					android:paddingRight="10dp"/>
+					android:text="Button"
+					android:layout_width="wrap_content"/>
 
 			</LinearLayout>
 
@@ -292,27 +236,18 @@
 
 				<Button
 					android:layout_height="wrap_content"
-					android:text="-1000"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
-					android:paddingLeft="10dp"
-					android:paddingRight="10dp"/>
+					android:text="Button"
+					android:layout_width="wrap_content"/>
 
 				<Button
 					android:layout_height="wrap_content"
-					android:text="2x"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
-					android:paddingLeft="10dp"
-					android:paddingRight="10dp"/>
+					android:text="Button"
+					android:layout_width="wrap_content"/>
 
 				<Button
 					android:layout_height="wrap_content"
-					android:text="+1000"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
-					android:paddingLeft="10dp"
-					android:paddingRight="10dp"/>
+					android:text="Button"
+					android:layout_width="wrap_content"/>
 
 			</LinearLayout>
 
@@ -321,3 +256,4 @@
 	</LinearLayout>
 
 </LinearLayout>
+
