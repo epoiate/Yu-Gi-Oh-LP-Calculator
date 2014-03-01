@@ -20,27 +20,24 @@
 			<Button
 				android:layout_height="wrap_content"
 				android:text="+1000"
-				android:layout_width="wrap_content"
 				android:rotation="180"
-				android:layout_weight="1.0"
+				android:layout_weight="1"
 				android:paddingLeft="10dp"
 				android:paddingRight="10dp"/>
 
 			<Button
 				android:layout_height="wrap_content"
 				android:text="2x"
-				android:layout_width="wrap_content"
 				android:rotation="180"
-				android:layout_weight="1.0"
+				android:layout_weight="1"
 				android:paddingLeft="10dp"
 				android:paddingRight="10dp"/>
 
 			<Button
 				android:layout_height="wrap_content"
 				android:text="-1000"
-				android:layout_width="wrap_content"
 				android:rotation="180"
-				android:layout_weight="1.0"
+				android:layout_weight="1"
 				android:paddingLeft="10dp"
 				android:paddingRight="10dp"/>
 
@@ -54,27 +51,24 @@
 			<Button
 				android:layout_height="wrap_content"
 				android:text="+500"
-				android:layout_width="wrap_content"
 				android:rotation="180"
-				android:layout_weight="1.0"
+				android:layout_weight="1"
 				android:paddingLeft="10dp"
 				android:paddingRight="10dp"/>
 
 			<Button
 				android:layout_height="wrap_content"
 				android:text="1/2"
-				android:layout_width="wrap_content"
 				android:rotation="180"
-				android:layout_weight="1.0"
+				android:layout_weight="1"
 				android:paddingLeft="10dp"
 				android:paddingRight="10dp"/>
 
 			<Button
 				android:layout_height="wrap_content"
 				android:text="-500"
-				android:layout_width="wrap_content"
 				android:rotation="180"
-				android:layout_weight="1.0"
+				android:layout_weight="1"
 				android:paddingLeft="10dp"
 				android:paddingRight="10dp"/>
 
@@ -88,27 +82,24 @@
 			<Button
 				android:layout_height="wrap_content"
 				android:text="+100"
-				android:layout_width="wrap_content"
 				android:rotation="180"
-				android:layout_weight="1.0"
+				android:layout_weight="1"
 				android:paddingLeft="10dp"
 				android:paddingRight="10dp"/>
 
 			<Button
 				android:layout_height="wrap_content"
 				android:text="Reset"
-				android:layout_width="wrap_content"
 				android:rotation="180"
-				android:layout_weight="1.0"
+				android:layout_weight="1"
 				android:paddingLeft="10dp"
 				android:paddingRight="10dp"/>
 
 			<Button
 				android:layout_height="wrap_content"
 				android:text="-100"
-				android:layout_width="wrap_content"
 				android:rotation="180"
-				android:layout_weight="1.0"
+				android:layout_weight="1"
 				android:paddingLeft="10dp"
 				android:paddingRight="10dp"/>
 
@@ -231,24 +222,21 @@
 				<Button
 					android:layout_height="wrap_content"
 					android:text="-100"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
+					android:layout_weight="1"
 					android:paddingLeft="10dp"
 					android:paddingRight="10dp"/>
 
 				<Button
 					android:layout_height="wrap_content"
 					android:text="Reset"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
+					android:layout_weight="1"
 					android:paddingLeft="10dp"
 					android:paddingRight="10dp"/>
 
 				<Button
 					android:layout_height="wrap_content"
 					android:text="+100"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
+					android:layout_weight="1"
 					android:paddingLeft="10dp"
 					android:paddingRight="10dp"/>
 
@@ -262,24 +250,21 @@
 				<Button
 					android:layout_height="wrap_content"
 					android:text="-500"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
+					android:layout_weight="1"
 					android:paddingLeft="10dp"
 					android:paddingRight="10dp"/>
 
 				<Button
 					android:layout_height="wrap_content"
 					android:text="1/2"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
+					android:layout_weight="1"
 					android:paddingLeft="10dp"
 					android:paddingRight="10dp"/>
 
 				<Button
 					android:layout_height="wrap_content"
 					android:text="+500"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
+					android:layout_weight="1"
 					android:paddingLeft="10dp"
 					android:paddingRight="10dp"/>
 
@@ -293,24 +278,21 @@
 				<Button
 					android:layout_height="wrap_content"
 					android:text="-1000"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
+					android:layout_weight="1"
 					android:paddingLeft="10dp"
 					android:paddingRight="10dp"/>
 
 				<Button
 					android:layout_height="wrap_content"
 					android:text="2x"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
+					android:layout_weight="1"
 					android:paddingLeft="10dp"
 					android:paddingRight="10dp"/>
 
 				<Button
 					android:layout_height="wrap_content"
 					android:text="+1000"
-					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
+					android:layout_weight="1"
 					android:paddingLeft="10dp"
 					android:paddingRight="10dp"/>
 
