@@ -20,7 +20,20 @@
 			<Button
 				android:layout_height="wrap_content"
 				android:text="Button"
-				android:layout_width="wrap_content"/>
+				android:layout_width="wrap_content"
+				android:rotation="180"/>
+				
+			<Button
+				android:layout_height="wrap_content"
+				android:text="Button"
+				android:layout_width="wrap_content"
+				android:rotation="180"/>
+				
+			<Button
+				android:layout_height="wrap_content"
+				android:text="Button"
+				android:layout_width="wrap_content"
+				android:rotation="180"/>
 
 		</LinearLayout>
 
@@ -32,7 +45,20 @@
 			<Button
 				android:layout_height="wrap_content"
 				android:text="Button"
-				android:layout_width="wrap_content"/>
+				android:layout_width="wrap_content"
+				android:rotation="180"/>
+				
+			<Button
+				android:layout_height="wrap_content"
+				android:text="Button"
+				android:layout_width="wrap_content"
+				android:rotation="180"/>
+				
+			<Button
+				android:layout_height="wrap_content"
+				android:text="Button"
+				android:layout_width="wrap_content"
+				android:rotation="180"/>
 
 		</LinearLayout>
 
@@ -44,7 +70,20 @@
 			<Button
 				android:layout_height="wrap_content"
 				android:text="Button"
-				android:layout_width="wrap_content"/>
+				android:layout_width="wrap_content"
+				android:rotation="180"/>
+				
+			<Button
+				android:layout_height="wrap_content"
+				android:text="Button"
+				android:layout_width="wrap_content"
+				android:rotation="180"/>
+				
+			<Button
+				android:layout_height="wrap_content"
+				android:text="Button"
+				android:layout_width="wrap_content"
+				android:rotation="180"/>
 
 		</LinearLayout>
 
@@ -56,18 +95,21 @@
 			<Button
 				android:layout_height="wrap_content"
 				android:text="+"
-				android:layout_width="wrap_content"/>
+				android:layout_width="wrap_content"
+				android:rotation="180"/>
 
 			<EditText
 				android:layout_height="wrap_content"
 				android:inputType="numberDecimal"
 				android:ems="9"
-				android:layout_width="wrap_content"/>
+				android:layout_width="wrap_content"
+				android:rotation="180"/>
 
 			<Button
 				android:layout_height="wrap_content"
 				android:text="-"
-				android:layout_width="wrap_content"/>
+				android:layout_width="wrap_content"
+				android:rotation="180"/>
 
 		</LinearLayout>
 
@@ -78,16 +120,17 @@
 
 			<TextView
 				android:layout_height="wrap_content"
-				android:text="Player 2:"
+				android:text="Life Points"
 				android:textAppearance="?android:attr/textAppearanceMedium"
 				android:layout_width="wrap_content"
 				android:rotation="180"/>
 
 			<TextView
 				android:layout_height="wrap_content"
-				android:text="Medium Text"
+				android:text="Player 2:"
 				android:textAppearance="?android:attr/textAppearanceMedium"
-				android:layout_width="wrap_content"/>
+				android:layout_width="wrap_content"
+				android:rotation="180"/>
 
 		</LinearLayout>
 
