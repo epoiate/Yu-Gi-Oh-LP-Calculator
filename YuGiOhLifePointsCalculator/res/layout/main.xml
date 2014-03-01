@@ -4,14 +4,73 @@
 	android:layout_height="match_parent"
 	android:layout_width="match_parent"
 	android:orientation="vertical"
-	android:layout_margin="10dp"
 	android:gravity="center">
 
 	<LinearLayout
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
 		android:orientation="vertical"
-		android:gravity="top|center">
+		android:gravity="center_horizontal"
+		android:rotation="18">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="Button"
+				android:layout_width="wrap_content"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="Button"
+				android:layout_width="wrap_content"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="Button"
+				android:layout_width="wrap_content"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="+"
+				android:layout_width="wrap_content"/>
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:inputType="numberDecimal"
+				android:ems="9"
+				android:layout_width="wrap_content"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="-"
+				android:layout_width="wrap_content"/>
+
+		</LinearLayout>
 
 		<LinearLayout
 			android:layout_height="wrap_content"
@@ -20,130 +79,103 @@
 
 			<TextView
 				android:layout_height="wrap_content"
-				android:text="Player 1:"
-				android:textAppearance="?android:attr/textAppearanceLarge"
-				android:layout_width="wrap_content"/>
+				android:text="Player 2:"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:rotation="180"/>
 
 			<TextView
 				android:layout_height="wrap_content"
-				android:text="Life Points"
-				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:text="Medium Text"
+				android:textAppearance="?android:attr/textAppearanceMedium"
 				android:layout_width="wrap_content"/>
 
 		</LinearLayout>
 
-		<ProgressBar
-			android:layout_height="wrap_content"
-			style="?android:attr/progressBarStyleHorizontal"
-			android:layout_width="match_parent"
-			android:paddingLeft="10dp"
-			android:paddingRight="10dp"/>
-
 		<LinearLayout
 			android:layout_height="wrap_content"
 			android:layout_width="match_parent"
-			android:orientation="horizontal"
-			android:gravity="center">
+			android:orientation="vertical"
+			android:gravity="center_horizontal">
 
-			<Button
+			<LinearLayout
 				android:layout_height="wrap_content"
-				android:text="-"
 				android:layout_width="wrap_content"
-				android:ems="3"
-				android:layout_weight="0"/>
+				android:orientation="horizontal">
 
-			<EditText
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="Player 1:"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:rotation="1.0"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="Medium Text"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"/>
+
+			</LinearLayout>
+
+			<LinearLayout
 				android:layout_height="wrap_content"
-				android:inputType="numberDecimal"
 				android:layout_width="wrap_content"
-				android:layout_weight="2"/>
+				android:orientation="horizontal">
 
-			<Button
+				<Button
+					android:layout_height="wrap_content"
+					android:text="-"
+					android:layout_width="wrap_content"/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="numberDecimal"
+					android:ems="9"
+					android:layout_width="wrap_content"/>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:text="+"
+					android:layout_width="wrap_content"/>
+
+			</LinearLayout>
+
+			<LinearLayout
 				android:layout_height="wrap_content"
-				android:text="+"
 				android:layout_width="wrap_content"
-				android:ems="3"
-				android:layout_weight="0"/>
+				android:orientation="horizontal">
 
-		</LinearLayout>
+				<Button
+					android:layout_height="wrap_content"
+					android:text="Button"
+					android:layout_width="wrap_content"/>
 
-		<LinearLayout
-			android:layout_height="wrap_content"
-			android:layout_width="match_parent"
-			android:orientation="horizontal"
-			android:gravity="center">
+			</LinearLayout>
 
-			<Button
+			<LinearLayout
 				android:layout_height="wrap_content"
-				android:text="50"
 				android:layout_width="wrap_content"
-				android:paddingLeft="15dp"
-				android:paddingRight="15dp"/>
+				android:orientation="horizontal">
 
-			<Button
+				<Button
+					android:layout_height="wrap_content"
+					android:text="Button"
+					android:layout_width="wrap_content"/>
+
+			</LinearLayout>
+
+			<LinearLayout
 				android:layout_height="wrap_content"
-				android:text="Reset"
 				android:layout_width="wrap_content"
-				android:paddingLeft="15dp"
-				android:paddingRight="15dp"
-				android:rotation="1"/>
+				android:orientation="horizontal">
 
-			<Button
-				android:layout_height="wrap_content"
-				android:text="50"
-				android:layout_width="wrap_content"
-				android:paddingLeft="15dp"
-				android:paddingRight="15dp"/>
+				<Button
+					android:layout_height="wrap_content"
+					android:text="Button"
+					android:layout_width="wrap_content"/>
 
-		</LinearLayout>
-
-		<LinearLayout
-			android:layout_height="wrap_content"
-			android:layout_width="match_parent"
-			android:orientation="horizontal">
-
-			<Button
-				android:layout_height="wrap_content"
-				android:text="100"
-				android:layout_width="wrap_content"
-				android:layout_weight="1.0"/>
-
-			<Button
-				android:layout_height="wrap_content"
-				android:text="1/2"
-				android:layout_width="wrap_content"
-				android:layout_weight="1.0"/>
-
-			<Button
-				android:layout_height="wrap_content"
-				android:text="100"
-				android:layout_width="wrap_content"
-				android:layout_weight="1.0"/>
-
-		</LinearLayout>
-
-		<LinearLayout
-			android:layout_height="wrap_content"
-			android:layout_width="match_parent"
-			android:orientation="horizontal">
-
-			<Button
-				android:layout_height="wrap_content"
-				android:text="1000"
-				android:layout_width="wrap_content"
-				android:layout_weight="1.0"/>
-
-			<Button
-				android:layout_height="wrap_content"
-				android:text="2x"
-				android:layout_width="wrap_content"
-				android:layout_weight="1.0"/>
-
-			<Button
-				android:layout_height="wrap_content"
-				android:text="1000"
-				android:layout_width="wrap_content"
-				android:layout_weight="1.0"/>
+			</LinearLayout>
 
 		</LinearLayout>
 
