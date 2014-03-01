@@ -14,8 +14,9 @@
 
 		<LinearLayout
 			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:orientation="horizontal">
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:weightSum="3">
 
 			<Button
 				android:layout_height="wrap_content"
@@ -48,8 +49,9 @@
 
 		<LinearLayout
 			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:orientation="horizontal">
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:weightSum="3">
 
 			<Button
 				android:layout_height="wrap_content"
@@ -82,8 +84,9 @@
 
 		<LinearLayout
 			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:orientation="horizontal">
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:weightSum="3">
 
 			<Button
 				android:layout_height="wrap_content"
@@ -225,8 +228,9 @@
 
 			<LinearLayout
 				android:layout_height="wrap_content"
-				android:layout_width="wrap_content"
-				android:orientation="horizontal">
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:weightSum="3">
 
 				<Button
 					android:layout_height="wrap_content"
@@ -256,8 +260,9 @@
 
 			<LinearLayout
 				android:layout_height="wrap_content"
-				android:layout_width="wrap_content"
-				android:orientation="horizontal">
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:weightSum="3">
 
 				<Button
 					android:layout_height="wrap_content"
@@ -287,22 +292,21 @@
 
 			<LinearLayout
 				android:layout_height="wrap_content"
-				android:layout_width="wrap_content"
-				android:orientation="horizontal">
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:weightSum="3">
 
 				<Button
 					android:layout_height="wrap_content"
 					android:text="-1000"
 					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
-					android:paddingLeft="10dp"
-					android:paddingRight="10dp"/>
+					android:layout_weight="1.0"/>
 
 				<Button
 					android:layout_height="wrap_content"
 					android:text="2x"
 					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
+					android:layout_weight="1.1"
 					android:paddingLeft="10dp"
 					android:paddingRight="10dp"/>
 
@@ -310,9 +314,7 @@
 					android:layout_height="wrap_content"
 					android:text="+1000"
 					android:layout_width="wrap_content"
-					android:layout_weight="1.0"
-					android:paddingLeft="10dp"
-					android:paddingRight="10dp"/>
+					android:layout_weight="1.0"/>
 
 			</LinearLayout>
 
