@@ -10,8 +10,7 @@
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
 		android:orientation="vertical"
-		android:gravity="center_horizontal"
-		android:rotation="18">
+		android:gravity="center_horizontal">
 
 		<LinearLayout
 			android:layout_height="wrap_content"
