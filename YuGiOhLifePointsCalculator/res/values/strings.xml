@@ -2,6 +2,11 @@
 <resources>
 
     <string name="hello">Hello World, MainActivity!</string>
-    <string name="app_name">YuGiOhLifePointsCalculator</string>
+    <string name="app_name">Yu-Gi-Oh Life Points Calculator</string>
+	<string name="new_game">New Game</string>
+	<string name="load_game">Load Game</string>
+	<string name="exit_game">Exit Game</string>
+	<string name="plus_1000">+1000</string>
+	
 
 </resources>
