@@ -1,8 +1,13 @@
 package com.example.yugiohLPC;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+
+import com.poiate.yugiohLPC.R;
 
 public class MainActivity extends Activity {
 
@@ -10,6 +15,19 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        final Button newGame = (Button) findViewById(R.id.new_game);
+   //     final Button loadGame = (Button) findViewById(R.id.load_game);
+   //     final Button exitGame = (Button) findViewById(R.id.exit_game);
+               
+        
+        newGame.setOnClickListener(new Button.OnClickListener(){
+        			public void onClick(View v){
+        				Intent i = new Intent(MainActivity.this, MainGame.class);  
+        		        startActivity(i);
+        			}
+        		}
+        );
     }
 
 
