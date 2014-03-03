@@ -4,7 +4,8 @@
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
 	android:orientation="vertical"
-	android:gravity="center">
+	android:gravity="center"
+	android:theme="@android:style/Theme.Holo">
 
 	<Button
 	    android:id="@+id/new_game"
