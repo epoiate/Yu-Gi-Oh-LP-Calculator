@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical" 
-    android:theme="@android:style/Theme.Holo" >
+    android:orientation="vertical" >
 
     <include 
 		android:layout_width="fill_parent" 
