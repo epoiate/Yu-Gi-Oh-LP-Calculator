@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:rotation="180"
+            android:text="@string/gain_1000"
+            android:textColor="@color/Green" />
+
+        <Button
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:rotation="180"
+            android:text="@string/dobra" />
+
+        <Button
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:rotation="180"
+            android:text="@string/lose_1000" 
+            android:textColor="@color/Red" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:rotation="180"
+            android:text="@string/gain_500"
+            android:textColor="@color/Green" />
+
+        <Button
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:rotation="180"
+            android:text="@string/half" />
+
+        <Button
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:rotation="180"
+            android:text="@string/lose_500"
+            android:textColor="@color/Red" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:rotation="180"
+            android:text="@string/gain_100"
+            android:textColor="@color/Green" />
+
+        <Button
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:rotation="180"
+            android:text="@string/reset" />
+
+        <Button
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:rotation="180"
+            android:text="@string/lose_100"
+            android:textColor="@color/Red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:rotation="180"
+            android:text="@string/gain" 
+            android:layout_weight="1.0"
+            android:textColor="@color/Green" />
+
+        <EditText
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:ems="9"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:rotation="180" 
+            android:layout_weight="3" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:rotation="180"
+            android:text="@string/lose"
+            android:textColor="@color/Red"
+            android:layout_weight="1.0"  />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/maingameProgressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:rotation="180" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:rotation="180"
+            android:text="Life Points"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="180"
+            android:text="Player 2:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</LinearLayout>
