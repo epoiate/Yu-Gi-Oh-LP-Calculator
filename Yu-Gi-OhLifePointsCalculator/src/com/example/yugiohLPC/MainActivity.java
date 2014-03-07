@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
         
         final Button newGame = (Button) findViewById(R.id.new_game);
    //     final Button loadGame = (Button) findViewById(R.id.load_game);
-   //     final Button exitGame = (Button) findViewById(R.id.exit_game);
+        final Button exitGame = (Button) findViewById(R.id.exit_game);
                
         
         newGame.setOnClickListener(new Button.OnClickListener(){
@@ -28,7 +28,16 @@ public class MainActivity extends Activity {
         			}
         		}
         );
+        
+        exitGame.setOnClickListener(new Button.OnClickListener(){
+			public void onClick(View v){ 
+		        finish();
+			}
+		}
+);
     }
+    
+    	
 
 
     @Override

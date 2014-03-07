@@ -36,7 +36,7 @@
             android:text="@string/dobra" />
 
         <Button
-            android:id="@+id/p1_lose_1000"
+            android:id="@+id/p2_lose_1000"
             style="android:attr/buttonBarButtonStyle"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
             android:text="@string/half" />
 
         <Button
-            android:id="@+id/p1_lose_500"
+            android:id="@+id/p2_lose_500"
             style="android:attr/buttonBarButtonStyle"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
@@ -124,7 +124,7 @@
             android:text="@string/reset" />
 
         <Button
-            android:id="@+id/p1_lose_100"
+            android:id="@+id/p2_lose_100"
             style="android:attr/buttonBarButtonStyle"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
@@ -166,7 +166,7 @@
             android:rotation="180" />
 
         <Button
-            android:id="@+id/p1_lose"
+            android:id="@+id/p2_lose"
             android:layout_width="0dip"
             android:layout_height="fill_parent"
             android:layout_weight="1.0"

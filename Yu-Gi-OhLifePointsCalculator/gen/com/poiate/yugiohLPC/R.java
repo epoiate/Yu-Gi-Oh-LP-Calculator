@@ -30,7 +30,7 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f09001b;
+        public static final int action_settings=0x7f09001f;
         public static final int exit_game=0x7f090002;
         public static final int load_game=0x7f090001;
         public static final int new_game=0x7f090000;
@@ -48,16 +48,20 @@ public final class R {
         public static final int p1_lose_500=0x7f09000b;
         public static final int p1_progress=0x7f090004;
         public static final int p1_reset=0x7f090009;
-        public static final int p2_LP=0x7f09001a;
-        public static final int p2_damage=0x7f090018;
+        public static final int p2_LP=0x7f09001e;
+        public static final int p2_damage=0x7f09001b;
         public static final int p2_double=0x7f090012;
-        public static final int p2_gain=0x7f090017;
-        public static final int p2_gain_100=0x7f090015;
+        public static final int p2_gain=0x7f09001a;
+        public static final int p2_gain_100=0x7f090017;
         public static final int p2_gain_1000=0x7f090011;
-        public static final int p2_gain_500=0x7f090013;
-        public static final int p2_half=0x7f090014;
-        public static final int p2_progress=0x7f090019;
-        public static final int p2_reset=0x7f090016;
+        public static final int p2_gain_500=0x7f090014;
+        public static final int p2_half=0x7f090015;
+        public static final int p2_lose=0x7f09001c;
+        public static final int p2_lose_100=0x7f090019;
+        public static final int p2_lose_1000=0x7f090013;
+        public static final int p2_lose_500=0x7f090016;
+        public static final int p2_progress=0x7f09001d;
+        public static final int p2_reset=0x7f090018;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
