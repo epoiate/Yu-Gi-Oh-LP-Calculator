@@ -1,4 +1,4 @@
-package com.example.yugiohLPC;
+package com.epoiate.yugiohLPC;
 
 import com.poiate.yugiohLPC.R;
 import com.poiate.yugiohLPC.R.layout;
