@@ -21,8 +21,8 @@ public class MainActivity extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_game);
-        lifePoint1.setText(Integer.toString(lp1));
-        lifePoint2.setText(Integer.toString(lp2));
+        lifePoint1.setText(Integer.toString(this.lp1));
+        lifePoint2.setText(Integer.toString(this.lp2));
 	}
 
 	@Override
