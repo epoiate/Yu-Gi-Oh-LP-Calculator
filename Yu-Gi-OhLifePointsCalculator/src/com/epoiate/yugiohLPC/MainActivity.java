@@ -1,19 +1,14 @@
 package com.epoiate.yugiohLPC;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-
 import com.poiate.yugiohLPC.R;
 
 public class MainActivity extends Activity implements OnClickListener {
 	
+/*
 	private EditText damage1;
 	private EditText damage2;
 	private TextView LifePoint1;
@@ -22,16 +17,15 @@ public class MainActivity extends Activity implements OnClickListener {
 	private Menu menu;
 	private String mode;
 	private Integer res;
-	
+*/
 	protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(findViewById(R.layout.main_game));
+        setContentView(R.layout.main_game);
 		
 	}
 
 	@Override
 	public void onClick(View paramView) {
-		// TODO Auto-generated method stub
 		
 		switch (paramView.getId()){
 		/*
@@ -78,7 +72,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	public void setUpGUI()
 	  {
-
+/*
 	    this.LifePoint1 = ((TextView)findViewById(R.id.p1_LP));
 	    this.LifePoint2 = ((TextView)findViewById(R.id.p2_LP));
 	    this.LifePoint1.setOnTextChangeListener(this);
@@ -87,7 +81,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	    this.LifePoint2.setEnabled(false);
 	    this.damage1 = ((EditText)findViewById(R.id.p1_damage));
 	    this.damage2 = ((EditText)findViewById(R.id.p2_damage));
-	    
+*/	    
 	    findViewById(R.id.p1_double).setOnClickListener(this);
 	    findViewById(R.id.p1_gain).setOnClickListener(this);
 	    findViewById(R.id.p1_gain_100).setOnClickListener(this);
