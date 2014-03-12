@@ -199,7 +199,6 @@
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
             android:rotation="180"
-            android:text="@string/life_points"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView

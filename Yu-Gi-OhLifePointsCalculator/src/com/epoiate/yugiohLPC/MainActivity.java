@@ -4,24 +4,25 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.TextView;
+
 import com.poiate.yugiohLPC.R;
 
 public class MainActivity extends Activity implements OnClickListener {
 	
-/*
-	private EditText damage1;
-	private EditText damage2;
-	private TextView LifePoint1;
-	private TextView LifePoint2;
-	private final String TAG = "YuGiOh";
-	private Menu menu;
-	private String mode;
-	private Integer res;
-*/
+
+//	private EditText damage1;
+//	private EditText damage2;
+	private TextView lifePoint1;
+	private TextView lifePoint2;
+	private int lp1 = 8000;
+	private int lp2 = 8000;
+
 	protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_game);
-		
+        lifePoint1.setText(Integer.toString(lp1));
+        lifePoint2.setText(Integer.toString(lp2));
 	}
 
 	@Override
@@ -37,6 +38,7 @@ public class MainActivity extends Activity implements OnClickListener {
         */
 		default: 
         case R.id.p1_LP:       //0x7f090003
+        	
         case R.id.p1_damage:   //0x7f090006
         case R.id.p1_double:   //0x7f09000f
         case R.id.p1_gain:     //0x7f090007
@@ -50,7 +52,7 @@ public class MainActivity extends Activity implements OnClickListener {
         case R.id.p1_lose_500: //0x7f09000b
         case R.id.p1_progress: //0x7f090004
         case R.id.p1_reset:    //0x7f090009
-        
+        ///////////////////////////////////
         case R.id.p2_LP:       //0x7f09001e
         case R.id.p2_damage:   //0x7f09001b
         case R.id.p2_double:   //0x7f090012
@@ -73,8 +75,8 @@ public class MainActivity extends Activity implements OnClickListener {
 	public void setUpGUI()
 	  {
 /*
-	    this.LifePoint1 = ((TextView)findViewById(R.id.p1_LP));
-	    this.LifePoint2 = ((TextView)findViewById(R.id.p2_LP));
+	    this.LifePoint1 = ((EditTextView)findViewById(R.id.p1_LP));
+	    this.LifePoint2 = ((EditTextView)findViewById(R.id.p2_LP));
 	    this.LifePoint1.setOnTextChangeListener(this);
 	    this.LifePoint2.setOnTextChangeListener(this);
 	    this.LifePoint1.setEnabled(false);
