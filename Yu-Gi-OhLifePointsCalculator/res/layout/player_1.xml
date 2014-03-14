@@ -47,7 +47,8 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/lose"
-            android:textColor="@color/Red" />
+            android:textColor="@color/Red" 
+			android:onClick="clickB"/>
 
         <EditText
             android:id="@+id/p1_damage"
@@ -67,7 +68,8 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/gain"
-            android:textColor="@color/Green" />
+            android:textColor="@color/Green"
+			android:onClick="clickB"/>
 
     </LinearLayout>
 
@@ -87,7 +89,8 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/lose_100"
-            android:textColor="@color/Red" />
+            android:textColor="@color/Red" 
+			android:onClick="clickB"/>
 
         <Button
             android:id="@+id/p1_reset"
@@ -97,7 +100,8 @@
             android:layout_weight="1.0"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="@string/reset" />
+            android:text="@string/reset" 
+			android:onClick="clickB"/>
 
         <Button
             android:id="@+id/p1_gain_100"
@@ -108,7 +112,8 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/gain_100"
-            android:textColor="@color/Green" />
+            android:textColor="@color/Green" 
+			android:onClick="clickB"/>
 
     </LinearLayout>
 
@@ -128,7 +133,8 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/lose_500"
-            android:textColor="@color/Red" />
+            android:textColor="@color/Red"
+			android:onClick="clickB"/>
 
         <Button
             android:id="@+id/p1_half"
@@ -138,7 +144,8 @@
             android:layout_weight="1.0"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="@string/half" />
+            android:text="@string/half"
+			android:onClick="clickB"/>
 
         <Button
             android:id="@+id/p1_gain_500"
@@ -149,7 +156,8 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/gain_500"
-            android:textColor="@color/Green" />
+            android:textColor="@color/Green"
+			android:onClick="clickB"/>
 
     </LinearLayout>
 
@@ -167,7 +175,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:text="@string/lose_1000"
-            android:textColor="@color/Red" />
+            android:textColor="@color/Red"
+			android:onClick="clickB"/>
 
         <Button
             android:id="@+id/p1_double"
@@ -177,7 +186,8 @@
             android:layout_weight="1.0"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="@string/dobra" />
+            android:text="@string/dobra"
+			android:onClick="clickB"/>
 
         <Button
             android:id="@+id/p1_gain_1000"
@@ -186,7 +196,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:text="@string/gain_1000"
-            android:textColor="@color/Green" />
+            android:textColor="@color/Green"
+			android:onClick="clickB"/>
 
     </LinearLayout>
 

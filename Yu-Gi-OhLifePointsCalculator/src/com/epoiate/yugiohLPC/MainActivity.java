@@ -4,31 +4,32 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.TextView;
+import android.widget.*;
 
 import com.poiate.yugiohLPC.R;
 
-public class MainActivity extends Activity implements OnClickListener {
+public class MainActivity extends Activity {
 	
 
-//	private EditText damage1;
-//	private EditText damage2;
+	private EditText damage1;
+	private EditText damage2;
 	private TextView lifePoint1;
 	private TextView lifePoint2;
 	private int lp1 = 8000;
 	private int lp2 = 8000;
-
+    
 	protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_game);
-//        lifePoint1.setText(Integer.toString(this.lp1));
-//        lifePoint2.setText(Integer.toString(this.lp2));
+//      lifePoint1.setText(Integer.toString(this.lp1));
+//      lifePoint2.setText(Integer.toString(this.lp2));
+		setUpGUI();
 	}
 
-	@Override
-	public void onClick(View paramView) {
-		
-		switch (paramView.getId()){
+
+	public void clickB(View v) {
+		Button clickedB = (Button) v;
+		switch (clickedB.getId()){
 		/*
 		public static final int action_settings=0x7f09001e;
 		
@@ -41,11 +42,17 @@ public class MainActivity extends Activity implements OnClickListener {
         	
         case R.id.p1_damage:   //0x7f090006
         case R.id.p1_double:   //0x7f09000f
+				    
         case R.id.p1_gain:     //0x7f090007
+			//try{
+				lp1 += Integer.parseInt(lifePoint1.getText().toString());
+				lifePoint1.setText(Integer.toString(lp1));
+				break;
+			//}catch (Exception e){System.out.println(e);}
         case R.id.p1_gain_100: //0x7f09000a
         case R.id.p1_gain_1000://0x7f090010
         case R.id.p1_gain_500: //0x7f09000d
-        case R.id.p1_half:     //0x7f09000c
+        case R.id.p1_half:     //0x7f090=00c
         case R.id.p1_lose:     //0x7f090005
         case R.id.p1_lose_100: //0x7f090008
         case R.id.p1_lose_1000://0x7f09000e
@@ -83,7 +90,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	    this.LifePoint2.setEnabled(false);
 	    this.damage1 = ((EditText)findViewById(R.id.p1_damage));
 	    this.damage2 = ((EditText)findViewById(R.id.p2_damage));
-*/	    
+	    
 	    findViewById(R.id.p1_double).setOnClickListener(this);
 	    findViewById(R.id.p1_gain).setOnClickListener(this);
 	    findViewById(R.id.p1_gain_100).setOnClickListener(this);
@@ -107,6 +114,6 @@ public class MainActivity extends Activity implements OnClickListener {
 	    findViewById(R.id.p2_lose_1000).setOnClickListener(this);
 	    findViewById(R.id.p2_lose_500).setOnClickListener(this);
 	    findViewById(R.id.p2_reset).setOnClickListener(this);
-	    
+	    */
 	  }
 }
