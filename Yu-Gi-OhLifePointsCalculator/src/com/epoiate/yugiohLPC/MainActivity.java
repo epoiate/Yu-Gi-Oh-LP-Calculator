@@ -17,6 +17,14 @@ public class MainActivity extends Activity {
 	private TextView lifePoint2;
 	private int lp1 = 8000;
 	private int lp2 = 8000;
+
+	@Override
+	protected void onSaveInstanceState(Bundle outState)
+		{
+			// TODO: Implement this method
+			super.onSaveInstanceState(outState);
+		}
+	
     
 	protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,11 +36,11 @@ public class MainActivity extends Activity {
 		lifePoint2 = (TextView) findViewById(R.id.p2_LP);
         lifePoint1.setText(Integer.toString(lp1));
         lifePoint2.setText(Integer.toString(lp2));
-	
 	}
 
 
 	public void clickB(View v) {
+		int aux;
 		Button clickedB = (Button) v;
 		switch (clickedB.getId()){
 		/*
@@ -53,151 +61,136 @@ public class MainActivity extends Activity {
 			break;
         
         case R.id.p1_double:   //0x7f09000f
-			lp1 = 2*lp1;
-			lifePoint1.setText(Integer.toString(lp1));
+			update(lp1,1);
 			break;
 			
         case R.id.p1_gain:     //0x7f090007
 			try{
-				lp1 += Integer.parseInt(damage1.getText().toString());
-				lifePoint1.setText(Integer.toString(lp1));
-				break;
-			}catch (Exception e){}
+				aux=Integer.parseInt(damage1.getText().toString());
+			}catch(Exception e){aux=0;}
+			update(aux,1);
+			break;
 			
         case R.id.p1_gain_100: //0x7f09000a
-			try{
-				lp1 += 100;
-				lifePoint1.setText(Integer.toString(lp1));
-				break;
-			}catch (Exception e){}
+			update(100,1);
+			break;
 	
         case R.id.p1_gain_1000://0x7f090010
-			try{
-				lp1 += 1000;
-				lifePoint1.setText(Integer.toString(lp1));
-				break;
-			}catch (Exception e){}
+			update(1000,1);
+			break;
 					
         case R.id.p1_gain_500: //0x7f09000d
-			try{
-				lp1 += 500;
-				lifePoint1.setText(Integer.toString(lp1));
-				break;
-			}catch (Exception e){}
+			update(500,1);
+			break;
 					
 		
         case R.id.p1_half:     //0x7f09000c
-			lp1 = lp1/2;
-			lifePoint1.setText(Integer.toString(lp1));
+			update(-lp1/2,1);
 			break;
 			
         case R.id.p1_lose:     //0x7f090005
 			try{
-				lp1 -= Integer.parseInt(damage1.getText().toString());
-				lifePoint1.setText(Integer.toString(lp1));
-				break;
-			}catch (Exception e){}
+				aux=Integer.parseInt(damage1.getText().toString());
+			}catch(Exception e){aux=0;}
+		    update(-aux,1);
+			break;
 			
         case R.id.p1_lose_100: //0x7f090008
-		try{
-				lp1 -= 100;
-				lifePoint1.setText(Integer.toString(lp1));
-				break;
-			}catch (Exception e){}
+			update(-100,1);
+			break;
 					
         case R.id.p1_lose_1000://0x7f09000e
-			try{
-				lp1 -= 1000;
-				lifePoint1.setText(Integer.toString(lp1));
-				break;
-			}catch (Exception e){}
+			update(-1000,1);
+			break;
 					
         case R.id.p1_lose_500: //0x7f09000b
-			try{
-				lp1 -= 500;
-				lifePoint1.setText(Integer.toString(lp1));
-				break;
-			}catch (Exception e){}
+			update(-500,1);
+			break;
 					
 
         case R.id.p1_reset:    //0x7f090009
-			lp1 = 8000;
-			lifePoint1.setText(Integer.toString(lp1));
-			break;
+			lp1=8000;
+			update(0,1);break;
 			
         ///////////////////////////////////
         
         case R.id.p2_double:   //0x7f090012
-			lp2 = 2*lp2;
-			lifePoint2.setText(Integer.toString(lp2));
+			update(lp2,2);
 			break;
 			
         case R.id.p2_gain:     //0x7f09001a
 			try{
-				lp2 += Integer.parseInt(damage2.getText().toString());
-				lifePoint2.setText(Integer.toString(lp2));
-				break;
-			}catch (Exception e){}
+				aux=Integer.parseInt(damage2.getText().toString());
+			}catch(Exception e){aux=0;}
+			update(aux,2);
+			break;
 			
         case R.id.p2_gain_100: //0x7f090017
-			try{
-				lp2 += 100;
-				lifePoint2.setText(Integer.toString(lp2));
-				break;
-			}catch (Exception e){}
+			update(100,2);
+			break;
 					
         case R.id.p2_gain_1000://0x7f090011
-			try{
-				lp2 += 1000;
-				lifePoint2.setText(Integer.toString(lp2));
-				break;
-			}catch (Exception e){}
+			update(1000,2);
+			break;
 	
         case R.id.p2_gain_500: //0x7f090014
-			try{
-				lp2 += 500;
-				lifePoint2.setText(Integer.toString(lp2));
-				break;
-			}catch (Exception e){}
+			update(500,2);
+			break;
 					
         case R.id.p2_half:     //0x7f090015
-			lp2 = lp2/2;
-			lifePoint2.setText(Integer.toString(lp2));
+			update(-lp2/2,2);
 			break;
 			
 		case R.id.p2_lose:     //0x7f09001c
 			try{
-				lp2 -= Integer.parseInt(damage2.getText().toString());
-				lifePoint2.setText(Integer.toString(lp2));
-				break;
-			}catch (Exception e){}
+				aux=Integer.parseInt(damage2.getText().toString());
+			}catch(Exception e){aux=0;}
+			update(-aux,2);
+			break;
 			
         case R.id.p2_lose_100: //0x7f090019
-			try{
-				lp2 -= 100;
-				lifePoint2.setText(Integer.toString(lp2));
-				break;
-			}catch (Exception e){}
+			update(-100,2);
+			break;
 			
         case R.id.p2_lose_1000://0x7f090013
-			try{
-				lp2 -= 1000;
-				lifePoint2.setText(Integer.toString(lp2));
-				break;
-			}catch (Exception e){}
+			update(-1000,2);
+			break;
 			
         case R.id.p2_lose_500: //0x7f090016
-			try{
-				lp2 -= 500;
-				lifePoint2.setText(Integer.toString(lp2));
-				break;
-			}catch (Exception e){}
+			update(-500,2);
+			break;
         
         case R.id.p2_reset:    //0x7f090018
 			lp2 = 8000;
-			lifePoint2.setText(Integer.toString(lp2));
-        	break;
+			update(0,2);
+			break;
 		}
 
+	}
+	
+	public void update(int valor, int player){
+		switch(player){
+			case 1:
+				try{
+					lp1 += valor;
+					lifePoint1.setText(Integer.toString(lp1));
+					damage1.setText("");
+							
+				}catch (Exception e){}break;
+			case 2:
+				try{
+					lp2 += valor;
+					lifePoint2.setText(Integer.toString(lp2));
+					damage2.setText("");
+				}catch (Exception e){}break;
+		}
+		if(lp2<0){
+			lp2=0;
+			lifePoint2.setText(Integer.toString(lp2));
+		}
+		if(lp1<0){
+			lp1=0;
+			lifePoint1.setText(Integer.toString(lp1));
+		}
 	}
 }
