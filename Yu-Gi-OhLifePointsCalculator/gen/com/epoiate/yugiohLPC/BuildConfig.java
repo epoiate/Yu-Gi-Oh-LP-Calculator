@@ -1,5 +1,5 @@
 /** Automatically generated file. DO NOT MODIFY */
-package com.poiate.yugiohLPC;
+package com.epoiate.yugiohLPC;
 
 public final class BuildConfig {
     public final static boolean DEBUG = true;

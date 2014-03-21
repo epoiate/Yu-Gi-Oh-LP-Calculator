@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.poiate.yugiohLPC;
+package com.epoiate.yugiohLPC;
 
 public final class R {
     public static final class attr {

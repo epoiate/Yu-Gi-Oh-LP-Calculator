@@ -1,11 +1,12 @@
-package com.epoiate.yugiohLPC;
+package com.poiate.yugiohLPC;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 
-import com.poiate.yugiohLPC.R;
+
+import com.epoiate.yugiohLPC.R;
 
 public class MainActivity extends Activity {
 
@@ -20,40 +21,34 @@ public class MainActivity extends Activity {
 
 	@Override
 	protected void onSaveInstanceState(Bundle outState) {
-		// TODO: Implement this method
 		outState.putInt(PLAYER_1, lp1);
 		outState.putInt(PLAYER_2, lp2);
-		
 		super.onSaveInstanceState(outState);
 	}
-	
-	@Override
-	protected void onRestoreInstanceState(Bundle savedInstanceState){
-		//TODO
-		
-		super.onRestoreInstanceState(savedInstanceState);
-	        // Restore value of members from saved state
-	        lp1 = savedInstanceState.getInt(PLAYER_1);
-	        lp2 = savedInstanceState.getInt(PLAYER_2);
-	}
-	
+
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_game);
-
 		damage1 = (EditText) findViewById(R.id.p1_damage);
 		damage2 = (EditText) findViewById(R.id.p2_damage);
 		lifePoint1 = (TextView) findViewById(R.id.p1_LP);
 		lifePoint2 = (TextView) findViewById(R.id.p2_LP);
+		
+		 // Check whether we're recreating a previously destroyed instance
+	    if (savedInstanceState != null) {
+	        // Restore value of members from saved state
+	        lp1 = savedInstanceState.getInt(PLAYER_1);
+	        lp2 = savedInstanceState.getInt(PLAYER_2);
+	    } else {
+	        // Probably initialize members with default values for a new instance
+	    	lp1 = 8000;
+	    	lp2 = 8000;
+	    }
+	    this.lifePoint1.setText(Integer.toString(lp1));
+		this.lifePoint2.setText(Integer.toString(lp2));
+		
 	}
-	
-	protected void onResume(){
-		lifePoint1.setText(Integer.toString(lp1));
-		lifePoint2.setText(Integer.toString(lp2));
-	}
-
-
 
 	public void clickB(View v) {
 		int aux;
@@ -65,9 +60,12 @@ public class MainActivity extends Activity {
 		 * public static final int exit_game=0x7f090002; public static final int
 		 * load_game=0x7f090001; public static final int new_game=0x7f090000;
 		 * 
-		 * case R.id.p1_LP: //0x7f090003 case R.id.p1_damage: //0x7f090006 case
-		 * R.id.p1_progress: //0x7f090004 case R.id.p2_LP: //0x7f09001e case
-		 * R.id.p2_damage: //0x7f09001b case R.id.p2_progress: //0x7f09001d
+		 * case R.id.p1_LP: 		//0x7f090003
+		 * case R.id.p1_damage:		//0x7f090006
+		 * case R.id.p1_progress: 	//0x7f090004
+		 * case R.id.p2_LP: 		//0x7f09001e 
+		 * case R.id.p2_damage: 	//0x7f09001b 
+		 * case R.id.p2_progress: 	//0x7f09001d
 		 */
 		default:
 			break;
