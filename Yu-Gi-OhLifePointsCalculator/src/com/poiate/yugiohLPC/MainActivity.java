@@ -9,8 +9,6 @@ import com.epoiate.yugiohLPC.R;
 
 public class MainActivity extends Activity {
 
-	static final String PLAYER_1 = "playerLP1";
-	static final String PLAYER_2 = "playerLP1";
 	private EditText damage1;
 	private EditText damage2;
 	private TextView lifePoint1;
@@ -29,8 +27,8 @@ public class MainActivity extends Activity {
 		// Check whether we're recreating a previously destroyed instance
 		if (savedInstanceState != null) {
 			// Restore value of members from saved state
-			lp1 = savedInstanceState.getInt(PLAYER_1);
-			lp2 = savedInstanceState.getInt(PLAYER_2);
+			lp1 = savedInstanceState.getInt("lp1");
+			lp2 = savedInstanceState.getInt("lp2");
 		} else {
 			// Probably initialize members with default values for a new
 			// instance
@@ -45,18 +43,9 @@ public class MainActivity extends Activity {
 
 	@Override
 	protected void onSaveInstanceState(Bundle outState) {
-		outState.putInt(PLAYER_1, lp1);
-		outState.putInt(PLAYER_2, lp2);
+		outState.putInt("lp1", lp1);
+		outState.putInt("lp2", lp2);
 		super.onSaveInstanceState(outState);
-	}
-
-	public void onPause() {
-		// TODO
-
-	}
-
-	public void onResume() {
-		// TODO
 	}
 
 	public void clickB(View v) {
