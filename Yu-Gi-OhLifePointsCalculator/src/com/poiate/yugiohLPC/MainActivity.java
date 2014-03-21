@@ -5,27 +5,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 
-
 import com.epoiate.yugiohLPC.R;
 
 public class MainActivity extends Activity {
 
-	static final String PLAYER_1 = "playerLP";
-	static final String PLAYER_2 = "playerLP";
+	static final String PLAYER_1 = "playerLP1";
+	static final String PLAYER_2 = "playerLP1";
 	private EditText damage1;
 	private EditText damage2;
 	private TextView lifePoint1;
 	private TextView lifePoint2;
 	private int lp1;
 	private int lp2;
-
-	@Override
-	protected void onSaveInstanceState(Bundle outState) {
-		outState.putInt(PLAYER_1, lp1);
-		outState.putInt(PLAYER_2, lp2);
-		super.onSaveInstanceState(outState);
-	}
-
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -34,20 +25,38 @@ public class MainActivity extends Activity {
 		damage2 = (EditText) findViewById(R.id.p2_damage);
 		lifePoint1 = (TextView) findViewById(R.id.p1_LP);
 		lifePoint2 = (TextView) findViewById(R.id.p2_LP);
-		
-		 // Check whether we're recreating a previously destroyed instance
-	    if (savedInstanceState != null) {
-	        // Restore value of members from saved state
-	        lp1 = savedInstanceState.getInt(PLAYER_1);
-	        lp2 = savedInstanceState.getInt(PLAYER_2);
-	    } else {
-	        // Probably initialize members with default values for a new instance
-	    	lp1 = 8000;
-	    	lp2 = 8000;
-	    }
-	    this.lifePoint1.setText(Integer.toString(lp1));
+
+		// Check whether we're recreating a previously destroyed instance
+		if (savedInstanceState != null) {
+			// Restore value of members from saved state
+			lp1 = savedInstanceState.getInt(PLAYER_1);
+			lp2 = savedInstanceState.getInt(PLAYER_2);
+		} else {
+			// Probably initialize members with default values for a new
+			// instance
+			lp1 = 8000;
+			lp2 = 8000;
+		}
+
+		this.lifePoint1.setText(Integer.toString(lp1));
 		this.lifePoint2.setText(Integer.toString(lp2));
-		
+
+	}
+
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		outState.putInt(PLAYER_1, lp1);
+		outState.putInt(PLAYER_2, lp2);
+		super.onSaveInstanceState(outState);
+	}
+
+	public void onPause() {
+		// TODO
+
+	}
+
+	public void onResume() {
+		// TODO
 	}
 
 	public void clickB(View v) {
@@ -60,12 +69,9 @@ public class MainActivity extends Activity {
 		 * public static final int exit_game=0x7f090002; public static final int
 		 * load_game=0x7f090001; public static final int new_game=0x7f090000;
 		 * 
-		 * case R.id.p1_LP: 		//0x7f090003
-		 * case R.id.p1_damage:		//0x7f090006
-		 * case R.id.p1_progress: 	//0x7f090004
-		 * case R.id.p2_LP: 		//0x7f09001e 
-		 * case R.id.p2_damage: 	//0x7f09001b 
-		 * case R.id.p2_progress: 	//0x7f09001d
+		 * case R.id.p1_LP: //0x7f090003 case R.id.p1_damage: //0x7f090006 case
+		 * R.id.p1_progress: //0x7f090004 case R.id.p2_LP: //0x7f09001e case
+		 * R.id.p2_damage: //0x7f09001b case R.id.p2_progress: //0x7f09001d
 		 */
 		default:
 			break;
