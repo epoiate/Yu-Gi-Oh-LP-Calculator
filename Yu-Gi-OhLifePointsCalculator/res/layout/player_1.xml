@@ -13,19 +13,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Player 1:"
+            android:text="@string/player_1"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
+            android:id="@+id/p1_LP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
-            android:text="Life Points"
             android:textAppearance="?android:attr/textAppearanceMedium" />
+
     </LinearLayout>
 
     <ProgressBar
-        android:id="@+id/maingameProgressBar1"
+        android:id="@+id/p1_progress"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,31 +40,37 @@
         android:orientation="horizontal" >
 
         <Button
+            android:id="@+id/p1_lose"
             android:layout_width="0dip"
             android:layout_height="fill_parent"
+            android:layout_weight="1.0"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="@string/lose" 
-            android:layout_weight="1.0"
-            android:textColor="@color/Red" />
+            android:text="@string/lose"
+            android:textColor="@color/Red" 
+			android:onClick="clickB"/>
 
         <EditText
+            android:id="@+id/p1_damage"
             android:layout_width="0dip"
             android:layout_height="fill_parent"
+            android:layout_weight="3"
             android:inputType="numberDecimal"
             android:minEms="6"
             android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:layout_weight="3" />
+            android:paddingRight="10dp" />
 
         <Button
+            android:id="@+id/p1_gain"
             android:layout_width="0dip"
             android:layout_height="fill_parent"
+            android:layout_weight="1.0"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/gain"
-            android:layout_weight="1.0"
-            android:textColor="@color/Green" />
+            android:textColor="@color/Green"
+			android:onClick="clickB"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -74,6 +81,7 @@
         android:weightSum="3" >
 
         <Button
+            android:id="@+id/p1_lose_100"
             style="android:attr/buttonBarButtonStyle"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
@@ -81,18 +89,22 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/lose_100"
-            android:textColor="@color/Red" />
+            android:textColor="@color/Red" 
+			android:onClick="clickB"/>
 
         <Button
+            android:id="@+id/p1_reset"
             style="android:attr/buttonBarButtonStyle"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="@string/reset" />
+            android:text="@string/reset" 
+			android:onClick="clickB"/>
 
         <Button
+            android:id="@+id/p1_gain_100"
             style="android:attr/buttonBarButtonStyle"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
@@ -100,7 +112,9 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/gain_100"
-            android:textColor="@color/Green" />
+            android:textColor="@color/Green" 
+			android:onClick="clickB"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -111,6 +125,7 @@
         android:weightSum="3" >
 
         <Button
+            android:id="@+id/p1_lose_500"
             style="android:attr/buttonBarButtonStyle"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
@@ -118,18 +133,22 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/lose_500"
-            android:textColor="@color/Red" />
+            android:textColor="@color/Red"
+			android:onClick="clickB"/>
 
         <Button
+            android:id="@+id/p1_half"
             style="android:attr/buttonBarButtonStyle"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="@string/half" />
+            android:text="@string/half"
+			android:onClick="clickB"/>
 
         <Button
+            android:id="@+id/p1_gain_500"
             style="android:attr/buttonBarButtonStyle"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
@@ -137,7 +156,9 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/gain_500"
-            android:textColor="@color/Green" />
+            android:textColor="@color/Green"
+			android:onClick="clickB"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -148,29 +169,36 @@
         android:weightSum="3" >
 
         <Button
+            android:id="@+id/p1_lose_1000"
             style="android:attr/buttonBarButtonStyle"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:text="@string/lose_1000"
-            android:textColor="@color/Red" />
+            android:textColor="@color/Red"
+			android:onClick="clickB"/>
 
         <Button
+            android:id="@+id/p1_double"
             style="android:attr/buttonBarButtonStyle"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="@string/dobra" />
+            android:text="@string/dobra"
+			android:onClick="clickB"/>
 
         <Button
+            android:id="@+id/p1_gain_1000"
             style="android:attr/buttonBarButtonStyle"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:text="@string/gain_1000"
-            android:textColor="@color/Green" />
+            android:textColor="@color/Green"
+			android:onClick="clickB"/>
+
     </LinearLayout>
 
 </LinearLayout>

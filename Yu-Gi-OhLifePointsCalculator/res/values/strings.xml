@@ -17,7 +17,11 @@
     <string name="dobra">2x</string>
     <string name="gain">+</string>
     <string name="lose">-</string>
+    <string name="life_points">8000</string>
     <string name="empty_space"></string>
+    <string name="player_1">Player 1:</string>
+    <string name="player_2">Player 2:</string>
     <string name="action_settings">action_settings</string>
+    <string name="title_activity_main_game">MainGame</string>
 
 </resources>
