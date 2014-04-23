@@ -13,6 +13,8 @@ public class MainActivity extends Activity {
 	private EditText damage2;
 	private TextView lifePoint1;
 	private TextView lifePoint2;
+	private ProgressBar progress1;
+	private ProgressBar progress2;
 	private int lp1;
 	private int lp2;
 
@@ -23,7 +25,9 @@ public class MainActivity extends Activity {
 		damage2 = (EditText) findViewById(R.id.p2_damage);
 		lifePoint1 = (TextView) findViewById(R.id.p1_LP);
 		lifePoint2 = (TextView) findViewById(R.id.p2_LP);
-
+		progress1 = (ProgressBar) findViewById(R.id.p1_progress);
+		progress2 = (ProgressBar) findViewById(R.id.p2_progress);
+		
 		// Check whether we're recreating a previously destroyed instance
 		if (savedInstanceState != null) {
 			// Restore value of members from saved state
@@ -38,6 +42,10 @@ public class MainActivity extends Activity {
 
 		this.lifePoint1.setText(Integer.toString(lp1));
 		this.lifePoint2.setText(Integer.toString(lp2));
+		this.progress1.setSecondaryProgress(lp1);
+		this.progress2.setSecondaryProgress(lp2);
+		this.progress1.setProgress(lp1-8000);
+		this.progress2.setProgress(lp2-8000);
 
 	}
 
@@ -187,6 +195,9 @@ public class MainActivity extends Activity {
 				lp1 += valor;
 				lifePoint1.setText(Integer.toString(lp1));
 				damage1.setText("");
+				progress1.setSecondaryProgress(lp1);
+				progress1.setProgress(lp1-8000);
+				progress1.invalidate();
 
 			} catch (Exception e) {
 			}
@@ -196,6 +207,9 @@ public class MainActivity extends Activity {
 				lp2 += valor;
 				lifePoint2.setText(Integer.toString(lp2));
 				damage2.setText("");
+				progress2.setSecondaryProgress(lp2);
+				progress2.setProgress(lp2-8000);
+				progress2.invalidate();
 			} catch (Exception e) {
 			}
 			break;
