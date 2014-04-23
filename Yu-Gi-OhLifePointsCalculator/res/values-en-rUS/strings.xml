@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_world">Hello World, MainActivity!</string>
+    <string name="app_name">Yu-Gi-Oh Life Points Calculator</string>
+    <string name="new_game">New Game</string>
+    <string name="load_game">Load Game</string>
+    <string name="exit_game">Exit Game</string>
+    <string name="lose_1000">-1000</string>
+    <string name="lose_500">-500</string>
+    <string name="lose_100">-100</string>
+    <string name="gain_1000">+1000</string>
+    <string name="gain_500">+500</string>
+    <string name="gain_100">+100</string>
+    <string name="reset">Reset</string>
+    <string name="half">¹/2</string>
+    <string name="dobra">2x</string>
+    <string name="gain">+</string>
+    <string name="lose">-</string>
+    <string name="life_points">8000</string>
+    <string name="empty_space"></string>
+    <string name="player_1">Player 1:</string>
+    <string name="player_2">Player 2:</string>
+    <string name="action_settings">action_settings</string>
+    <string name="title_activity_main_game">MainGame</string>
+
+</resources>

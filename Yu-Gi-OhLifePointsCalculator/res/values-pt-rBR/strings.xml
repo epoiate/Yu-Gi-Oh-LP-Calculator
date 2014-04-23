@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_world">Olá Mundo, MainActivity!</string>
+    <string name="app_name">Calculadora Yu-Gi-Oh</string>
+    <string name="new_game">Novo Jogo</string>
+    <string name="load_game">Carregar Jogo</string>
+    <string name="exit_game">Sair</string>
+    <string name="lose_1000">-1000</string>
+    <string name="lose_500">-500</string>
+    <string name="lose_100">-100</string>
+    <string name="gain_1000">+1000</string>
+    <string name="gain_500">+500</string>
+    <string name="gain_100">+100</string>
+    <string name="reset">Resetar</string>
+    <string name="half">¹/2</string>
+    <string name="dobra">2x</string>
+    <string name="gain">+</string>
+    <string name="lose">-</string>
+    <string name="life_points">8000</string>
+    <string name="empty_space"></string>
+    <string name="player_1">Jogador 1:</string>
+    <string name="player_2">Jogador 2:</string>
+    <string name="action_settings">action_settings</string>
+    <string name="title_activity_main_game">MainGame</string>
+
+</resources>
